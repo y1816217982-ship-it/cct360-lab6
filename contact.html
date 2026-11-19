@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Night Sky Club | Contact</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  
+    <nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Night Sky Club</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+        
+        <div class="drawer-header">
+          <span class="drawer-title" id="navbarNavLabel">Menu</span>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+       
+        <div class="drawer-body">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+          </ul>
+          
+        </div>
+      
+    </dialog>
+    </div>
+  </nav>
+
+  <main class="container mt-5">
+    <h1>Contact Night Sky Club</h1>
+    <p class="mb-4">Have a question about getting started? Send us a message.</p>
+
+    <form class="mx-auto" style="max-width: 900px;">
+      
+        <div class="row g-4">
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName">
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="email" class="form-label" >Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+           
+            <label for="topic" class="form-label">What are you interested in?</label>
+            <select class="form-control" id="topic" name="topic">
+              <option value="">Choose a topic</option>
+              <option value="moon">The Moon</option>
+              <option value="planets">Planets</option>
+              <option value="deep-sky">Deep-sky objects</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-field">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-field">
+            <input type="checkbox" id="consent" name="consent" class="check" required>
+            <label for="consent">I agree to be contacted about my message.</label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-solid theme-primary mt-5">Submit</button>
+    </form>
+  
+</main>
+
+  <footer class="bg-primary fg-contrast-primary mt-5 py-4">
+    <div class="container text-center">
+      <p class="mb-0">Night Sky Club &middot; A little closer to the stars</p>
+    </div>
+  </footer>
+</body>
+</html>
