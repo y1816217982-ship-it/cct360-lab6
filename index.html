@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Night Sky Club | Explore</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+
+<body>
+  <nav class="navbar md:navbar-expand bg-1 fg-2" aria-label="Main navigation">
+
+
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" href="index.html">Night Sky Club</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+
+
+      <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+        
+        <div class="drawer-header">
+          <span class="drawer-title" id="navbarNavLabel">Menu</span>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close menu"></button>
+        </div>
+
+
+        <div class="drawer-body">
+          
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main>
+
+
+    <div class="container mt-4">
+      <h1 class="mb-4">Discover the night sky</h1>
+      <p class="mb-4">A simple guide to a few amazing things you can find above us.</p>
+    
+    
+      <div id="heroCarousel" class="carousel carousel-overlay slide">
+      <div class="carousel-inner rounded-5">
+        <div class="carousel-item active">
+          <img src="images/banner-moon.jpg" class="d-block w-100" alt="Illustration of the Moon above a dark mountain landscape">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="images/banner-saturn.jpg" class="d-block w-100" alt="Illustration of Saturn and its rings against a starry sky">
+        </div>
+        
+        <div class="carousel-item">
+          <img src="images/banner-stars.jpg" class="d-block w-100" alt="Illustration of a star-filled night sky above the hills">
+        </div>
+      </div>
+      
+      
+      <div class="carousel-overlay-controls">
+        <div>
+          <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+
+  <footer class="bg-primary fg-contrast-primary mt-5 py-4">
+    <div class="container text-center">
+      <p class="mb-0">Night Sky Club &middot; A little closer to the stars</p>
+    </div>
+  </footer>
+</body>
+</html>
